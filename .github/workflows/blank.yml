@@ -1,0 +1,13 @@
+name: AutoDownloader
+on:
+  workflow_dispatch
+  #pull
+jobs:
+  AutoDownloaderProcess:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2.1.0
+
+          remove-haskell: 'true'
+    - name: Enable BBR
+      run: 
